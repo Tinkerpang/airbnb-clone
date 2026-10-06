@@ -1,0 +1,76 @@
+:root {
+  --airbnb-red: #FF385C;
+  --airbnb-dark-red: #E31C5F;
+  --text-dark: #222222;
+  --text-grey: #717171;
+  --border-grey: #DDDDDD;
+  --bg-light: #F7F7F7;
+  font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text-dark);
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: var(--airbnb-red);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--airbnb-dark-red);
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid var(--text-dark);
+  color: var(--text-dark);
+}
+
+.error-text {
+  color: var(--airbnb-red);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.spinner-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  color: var(--text-grey);
+}

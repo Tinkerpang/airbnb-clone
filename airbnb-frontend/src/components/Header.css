@@ -1,0 +1,138 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--border-grey);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header--transparent {
+  background: transparent;
+  border-bottom: none;
+  position: absolute;
+  width: 100%;
+}
+
+.header--transparent .header__logo,
+.header--transparent .header__become-host,
+.header--transparent .header__profile-btn {
+  color: #fff;
+}
+
+.header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--airbnb-red);
+  flex-shrink: 0;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-grey);
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 6px 6px 6px 20px;
+  flex: 1;
+  max-width: 480px;
+  background: #fff;
+}
+
+.header__search-select {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+  color: var(--text-dark);
+}
+
+.header__search-btn {
+  background: var(--airbnb-red);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.header__right {
+  flex-shrink: 0;
+}
+
+.header__become-host {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header__profile {
+  position: relative;
+}
+
+.header__profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-grey);
+  border-radius: 999px;
+  padding: 6px 6px 6px 14px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header__avatar {
+  background: var(--text-grey);
+  color: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.header__dropdown {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  background: #fff;
+  border: 1px solid var(--border-grey);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  overflow: hidden;
+  z-index: 60;
+}
+
+.header__dropdown a,
+.header__dropdown button {
+  padding: 12px 16px;
+  text-align: left;
+  border: none;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header__dropdown a:hover,
+.header__dropdown button:hover {
+  background: var(--bg-light);
+}

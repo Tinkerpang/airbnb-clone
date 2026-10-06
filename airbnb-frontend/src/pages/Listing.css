@@ -1,0 +1,331 @@
+.listing-page {
+  padding: 32px 40px 60px;
+}
+
+.listing-page h1 {
+  margin-bottom: 6px;
+  font-size: 26px;
+}
+
+.listing-page__subheading {
+  color: var(--text-grey);
+  margin-bottom: 20px;
+}
+
+/* Image gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.gallery__main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.gallery__grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Body layout */
+.listing-page__body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-top: 32px;
+  align-items: start;
+}
+
+.listing-page__host-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.listing-page__host-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--airbnb-red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.listing-page__highlights {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.listing-page__description {
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.listing-page__amenities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 16px 0 24px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-grey);
+  margin: 28px 0;
+}
+
+/* Sidebar / cost calculator */
+.listing-page__sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+.cost-calculator {
+  border: 1px solid var(--border-grey);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.cost-calculator__price {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cost-calculator__rating {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-grey);
+}
+
+.cost-calculator__dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--border-grey);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.cost-calculator__dates label {
+  padding: 10px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cost-calculator__dates label:first-child {
+  border-right: 1px solid var(--border-grey);
+}
+
+.cost-calculator__dates input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.cost-calculator__guests {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid var(--border-grey);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.cost-calculator__guests select {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.cost-calculator__reserve {
+  width: 100%;
+}
+
+.cost-calculator__note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-grey);
+  margin: 10px 0 0;
+}
+
+.success-text {
+  color: #0a8a0a;
+  font-size: 14px;
+}
+
+.cost-calculator__breakdown {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.cost-calculator__breakdown div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cost-calculator__breakdown .discount span:last-child {
+  color: #0a8a0a;
+}
+
+.cost-calculator__total {
+  border-top: 1px solid var(--border-grey);
+  padding-top: 12px;
+  font-weight: 700;
+}
+
+/* Reviews */
+.reviews__bars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 32px;
+  margin: 20px 0 28px;
+}
+
+.reviews__bar-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 24px;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.reviews__bar-track {
+  height: 4px;
+  background: var(--border-grey);
+  border-radius: 2px;
+}
+
+.reviews__bar-fill {
+  height: 100%;
+  background: var(--text-dark);
+  border-radius: 2px;
+}
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.reviews__item {
+  display: flex;
+  gap: 12px;
+}
+
+.reviews__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--text-grey);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.reviews__date {
+  color: var(--text-grey);
+  font-size: 13px;
+  margin: 2px 0 6px;
+}
+
+/* Host card */
+.host-card {
+  display: flex;
+  gap: 20px;
+}
+
+.host-card__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--airbnb-red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.host-card__blurb {
+  max-width: 500px;
+}
+
+/* Things to know */
+.things-to-know__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.things-to-know__grid h4 {
+  margin-bottom: 10px;
+}
+
+.things-to-know__grid ul {
+  padding-left: 18px;
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .listing-page__body {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .gallery__grid {
+    display: none;
+  }
+  .things-to-know__grid, .reviews__grid, .reviews__bars {
+    grid-template-columns: 1fr;
+  }
+}
